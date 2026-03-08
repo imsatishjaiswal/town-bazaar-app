@@ -32,7 +32,7 @@ Client (Web / Mobile)
     API Gateway
         │
         ├── Auth Service
-        ├── User Service
+        ├── User Auth Service
         ├── Vendor Service
         ├── Product Service
         ├── Order Service
@@ -51,7 +51,7 @@ Client (Web / Mobile)
 | -------------------- | ----------------------------------- |
 | API Gateway          | Entry point for all client requests |
 | Auth Service         | Handles authentication and JWT      |
-| User Service         | Manages customer accounts           |
+| User Auth Service    | Manages customer accounts           |
 | Vendor Service       | Manages vendor profiles             |
 | Product Service      | Handles product/service listings    |
 | Order Service        | Manages order lifecycle             |
@@ -92,7 +92,7 @@ local-marketplace-platform
 ├── services
 │   ├── api-gateway
 │   ├── auth-service
-│   ├── user-service
+│   ├── user-auth-service
 │   ├── vendor-service
 │   ├── product-service
 │   ├── order-service

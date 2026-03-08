@@ -4,6 +4,7 @@ import express from "express";
 import { createProxyMiddleware } from "http-proxy-middleware";
 const app = express();
 
+//User service gateway
 app.use(
   "/users",
   createProxyMiddleware({
@@ -12,14 +13,7 @@ app.use(
   }),
 );
 
-app.use(
-  "/auth",
-  createProxyMiddleware({
-    target: "http://localhost:8001",
-    changeOrigin: true,
-  }),
-);
-
+//Customer service gateway
 app.use(
   "/customers",
   createProxyMiddleware({
@@ -28,6 +22,7 @@ app.use(
   }),
 );
 
+//Store gateway
 app.listen(8000, () =>
   console.log(
     "API Gateway running on port:",
