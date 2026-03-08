@@ -2,6 +2,11 @@ import User from "../models/user.model.js";
 import jwt from "jsonwebtoken";
 
 const registerUser = async (data) => {
+  const existingUser = await User.findOne({ email: data.email });
+
+  if (existingUser) {
+    throw new Error("user already registered with this email");
+  }
   return await User.create(data);
 };
 
