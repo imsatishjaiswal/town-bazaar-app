@@ -1,3 +1,4 @@
+```
 my-app/
 │
 ├── public/
@@ -42,6 +43,7 @@ my-app/
 ├── package.json
 ├── .gitignore
 └── README.md
+```
 
 ⚙️ Key Concepts
 
@@ -92,3 +94,7 @@ element={
 }
 export default AppRoutes;
 -----------------+++++++-----------------------------
+
+```
+
+```
